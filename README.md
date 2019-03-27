@@ -28,4 +28,23 @@ Step by Step:
 
 ## Features
 
-[updating...]
+- Register
+- Login/ logout
+- Add/ delete images
+- Show list images
+- *updating...*
+
+## Description
+
+- Backend community with frontend via API and deserialize JSON
+- Used JWT to authenticate for API
+- Built project base on Maven
+- MySQL for database (upgrade to redis later)
+- Deploying with Docker (maybe)
+
+## Techniques used
+
+- [Tomcat Server](https://spring.io/):  is an open-source Java Servlet Container, it implementation of the Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket.
+- [JPA](https://en.wikipedia.org/wiki/Java_Persistence_API): the Java Persistence API (JPA) is the Java standard for mapping Java objects to a relational database.
+- [MySQL](https://www.mysql.com/): is an open source relational database management system (RDBMS).
+- [Apache Maven](https://maven.apache.org/): is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
