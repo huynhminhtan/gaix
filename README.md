@@ -21,7 +21,7 @@ Step by Step:
   - Change suitable config database with Hibernate & MySQL, line 29:
   
   ```xml
- 	<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/testjpa" />
+ 	<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/gaixdb" />
 	<property name="javax.persistence.jdbc.user" value="root" />
 	<property name="javax.persistence.jdbc.password" value="123456" />
    ```
