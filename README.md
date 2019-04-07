@@ -21,16 +21,16 @@ Step by Step:
   - Change suitable config database with Hibernate & MySQL, line 29:
 
     ```xml
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/testjpa" />
-			<property name="javax.persistence.jdbc.user" value="root" />
-			<property name="javax.persistence.jdbc.password" value="123456" />
+ 	<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/testjpa" />
+	<property name="javax.persistence.jdbc.user" value="root" />
+	<property name="javax.persistence.jdbc.password" value="123456" />
     ```
     - Or, change suitable config database with Hibernate & Postgres, line 48:
 
     ```xml
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/gaixdb" /> <!-- BD Mane -->
-            <property name="javax.persistence.jdbc.user" value="postgres" /> <!-- DB User -->
-            <property name="javax.persistence.jdbc.password" value="123456" /> <!-- DB Password -->
+	<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/gaixdb" /> <!-- BD Mane -->
+	<property name="javax.persistence.jdbc.user" value="postgres" /> <!-- DB User -->
+	<property name="javax.persistence.jdbc.password" value="123456" /> <!-- DB Password -->
     ```
 - Go to *utility.EntityManagerUtility* edit *.createEntityManagerFactory(...)* suitable.
 - Run project in Tomcat server.
