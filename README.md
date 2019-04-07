@@ -19,19 +19,19 @@ Step by Step:
 - Create new database with name *gaixdb* (or it's up to you).
 - Go to `/gaix/persistence/META-INF/persistence.xml` 
   - Change suitable config database with Hibernate & MySQL, line 29:
-
-    ```xml
+  
+  ```xml
  	<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/testjpa" />
 	<property name="javax.persistence.jdbc.user" value="root" />
 	<property name="javax.persistence.jdbc.password" value="123456" />
-    ```
-   - Or, change suitable config database with Hibernate & Postgres, line 48:
+   ```
+  - Or, change suitable config database with Hibernate & Postgres, line 48:
 
-    ```xml
+  ```xml
 	<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/gaixdb" /> <!-- BD Mane -->
 	<property name="javax.persistence.jdbc.user" value="postgres" /> <!-- DB User -->
 	<property name="javax.persistence.jdbc.password" value="123456" /> <!-- DB Password -->
-    ```
+  ```
 - Go to *utility.EntityManagerUtility* edit *.createEntityManagerFactory(...)* suitable.
 - Run project in Tomcat server.
 - Enjoy.
