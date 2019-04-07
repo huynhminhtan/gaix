@@ -11,9 +11,10 @@ public class EntityManagerUtility {
 		// Enforce noninstantiability with a private constructor
 		// Joshua Bloch , Effective Java Item 04
 	}
-
+	
 	private static EntityManagerFactory entityManagerFactory = Persistence
-			.createEntityManagerFactory("EmployeePersistenceUnit");
+//			.createEntityManagerFactory("EmployeePersistenceUnitForHibernate");
+			.createEntityManagerFactory("PersistenceUnitForHibernatePostgre");
 	
 	public static EntityManager getEntityManager() {
 		return entityManagerFactory.createEntityManager();

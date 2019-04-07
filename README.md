@@ -5,7 +5,8 @@ Project blog for girls, use Java servlet, JPA and JSP. Do you want to see girls?
 
 - Eclipse
 - Tomcat server
-- MySQL
+- MySQL / Postgres (it's up to you)
+- Hibernate
 - Brain (must)
 
 ## Install
@@ -16,13 +17,22 @@ Step by Step:
 - Download Tomcat server https://tomcat.apache.org/download-90.cgi
 - Add Tomcat server to Eclipse.
 - Create new database with name *gaixdb* (or it's up to you).
-- Go to `/gaix/persistence/META-INF/persistence.xml` change suitable config database:
+- Go to `/gaix/persistence/META-INF/persistence.xml` 
+  - Change suitable config database with Hibernate & MySQL, line 29:
 
     ```xml
-    <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/gaixdb" />
-    <property name="javax.persistence.jdbc.user" value="root" />
-    <property name="javax.persistence.jdbc.password" value="123456" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/testjpa" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.password" value="123456" />
     ```
+    - Or, change suitable config database with Hibernate & Postgres, line 48:
+
+    ```xml
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/gaixdb" /> <!-- BD Mane -->
+            <property name="javax.persistence.jdbc.user" value="postgres" /> <!-- DB User -->
+            <property name="javax.persistence.jdbc.password" value="123456" /> <!-- DB Password -->
+    ```
+- Go to *utility.EntityManagerUtility* edit *.createEntityManagerFactory(...)* suitable.
 - Run project in Tomcat server.
 - Enjoy.
 
