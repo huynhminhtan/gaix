@@ -25,7 +25,7 @@ Step by Step:
 	<property name="javax.persistence.jdbc.user" value="root" />
 	<property name="javax.persistence.jdbc.password" value="123456" />
     ```
-    - Or, change suitable config database with Hibernate & Postgres, line 48:
+   - Or, change suitable config database with Hibernate & Postgres, line 48:
 
     ```xml
 	<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/gaixdb" /> <!-- BD Mane -->
