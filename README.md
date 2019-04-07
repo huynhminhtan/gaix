@@ -38,11 +38,11 @@ Step by Step:
 
 ## Features
 
-- Register
-- Login/ logout
-- Add/ delete images
-- Show list images
-- *updating...*
+- Quản lý người dùng (đăng ký đăng nhập, login, logout)
+- Quản lý hình ảnh (thêm, xóa, sửa và cho trang quản trị)
+- Tìm kiếm hình ảnh với title
+- Hiển thị các hình ảnh theo lượt view.
+- ...
 
 ## Description
 
