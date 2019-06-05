@@ -26,12 +26,14 @@ body {
     text-transform: uppercase;
 }
 
+/* Search box*/
+
 .btn-search-top .icon-search {
     z-index: 2;
     left: auto;
     position: absolute;
     top: 19px;
-    background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_f01fcb405c10.png/f01fcb405c10.png);
+    background-image: url(../images/icon-search.png);
     background-repeat: no-repeat;
     background-position: -437px -344px;
     height: 10px;

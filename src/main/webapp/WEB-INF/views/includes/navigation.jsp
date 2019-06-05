@@ -11,7 +11,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Your Brand</a>
+            <a class="navbar-brand" href="#">Gai.X</a>
         </div>
 
         <!-- COLLAPSIBLE NAVBAR -->
