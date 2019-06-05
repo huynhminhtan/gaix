@@ -3,6 +3,7 @@ package controllers;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -54,20 +55,20 @@ public class IndexController extends HttpServlet {
 		//
 		// List<Employee> allEmployees = employeeService.findAllEmployees();
 		// req.setAttribute("allEmployees", allEmployees);
-		// RequestDispatcher dispatcher = req.getRequestDispatcher("employee.jsp");
-		// dispatcher.forward(req, resp);
+		 RequestDispatcher dispatcher = req.getRequestDispatcher("WEB-INF/views/index.jsp");
+		 dispatcher.forward(req, response);
 
 		// return "Hello World";
 
 		// set response headers
-		response.setContentType("text/html");
-		response.setCharacterEncoding("UTF-8");
-
-		PrintWriter writer = response.getWriter();
-
-		writer.append("<p>Hello World</p>");
-
-		writer.append("<a href='/gaix/employeeController'>Click here</a> go to Demo page");
+//		response.setContentType("text/html");
+//		response.setCharacterEncoding("UTF-8");
+//
+//		PrintWriter writer = response.getWriter();
+//
+//		writer.append("<p>Hello World</p>");
+//
+//		writer.append("<a href='/gaix/employeeController'>Click here</a> go to Demo page");
 
 	}
 

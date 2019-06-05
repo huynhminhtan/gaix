@@ -1,0 +1,27 @@
+body {
+    margin-top:80px;
+}
+
+.gagimage {
+    margin-bottom:10px;
+    margin-top:10px;
+}
+
+.container-body {
+    max-width: 935px;
+}
+
+/* Sidebar Right */
+
+.panel-title {
+    height: 34px;
+    background: url(../images/banner2x.png) center center / cover no-repeat rgb(0, 121, 211);
+    border-radius: 4px 4px 0px 0px;
+    margin: -12px -12px 10px;
+}
+
+.btn-create-post {
+    display: block;
+    margin-top: 12px;
+    text-transform: uppercase;
+}
