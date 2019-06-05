@@ -25,3 +25,21 @@ body {
     margin-top: 12px;
     text-transform: uppercase;
 }
+
+.btn-search-top .icon-search {
+    z-index: 2;
+    left: auto;
+    position: absolute;
+    top: 19px;
+    background-image: url(https://www.instagram.com/static/bundles/es6/sprite_core_f01fcb405c10.png/f01fcb405c10.png);
+    background-repeat: no-repeat;
+    background-position: -437px -344px;
+    height: 10px;
+    width: 10px;
+    margin-left: 13px;
+}
+
+.btn-search-top .form-control {
+    padding-left: 28px;
+    font-size: 0.9em;
+}
