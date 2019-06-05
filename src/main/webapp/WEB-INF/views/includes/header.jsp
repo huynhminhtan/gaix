@@ -5,6 +5,7 @@
 
     <title>Gai X. Web Application</title>
 
+    <script src="resources/js/jquery-1.11.1.min.js"></script>
     <script src="resources/js/bootstrap.min.js"></script>
     <link href="resources/css/bootstrap.min.css" rel="stylesheet">
     <link href="resources/css/style.css" rel="stylesheet">

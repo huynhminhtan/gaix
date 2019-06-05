@@ -35,12 +35,20 @@
             </form>
 
             <!-- Link (right) -->
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Signup</a></li>
-            </ul>
+            <%--<ul class="nav navbar-nav navbar-right">--%>
+            <%--<li><a href="#">Login</a></li>--%>
+            <%--<li><a href="#">Signup</a></li>--%>
+            <%--</ul>--%>
+
+            <div class="navbar-right login-signup">
+                <button class="btn btn-default" href="#signup" data-toggle="modal"
+                        data-target=".bs-modal-sm">Sign In/Register
+                </button>
+            </div>
 
         </div>
 
     </div>
 </nav>
+
+<jsp:include page="loginRegisterBox.jsp"/>
