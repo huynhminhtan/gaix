@@ -1,12 +1,14 @@
-package dao;
+package daos;
 
 import java.util.List;
+import java.util.Queue;
 
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 
-import model.Employee;
-import utility.EntityManagerUtility;
+import models.Employee;
+import utilitis.EntityManagerUtility;
 
 public class EmployeeDAOImpl implements EmployeeDAO {
 
@@ -31,7 +33,8 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 	@Override
 	public List<Employee> findAllEmployees() {
 		EntityManager entityManager = EntityManagerUtility.getEntityManager();
-		TypedQuery<Employee> query = entityManager.createQuery("Select e from Employee e", Employee.class);
+		Query query = entityManager.createQuery("Select e from Employee e");
+//		entityManager.createQuery("", Employee.class);
 		List<Employee> employees = query.getResultList();
 		entityManager.close();
 		return employees;

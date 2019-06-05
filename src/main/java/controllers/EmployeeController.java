@@ -1,4 +1,4 @@
-package controller;
+package controllers;
 
 import java.io.IOException;
 import java.util.List;
@@ -10,13 +10,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import service.EmployeeService;
-import service.EmployeeServiceImpl;
-import model.Employee;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import services.EmployeeService;
+import services.EmployeeServiceImpl;
+import models.Employee;
 
 @WebServlet("/employeeController")
 public class EmployeeController extends HttpServlet {
 
+	private static final Logger LOGGER = LoggerFactory.getLogger(EmployeeController.class);
 	private static final long serialVersionUID = 1L;
 
 	private final EmployeeService employeeService = new EmployeeServiceImpl();
@@ -33,7 +36,7 @@ public class EmployeeController extends HttpServlet {
 
 		List<Employee> allEmployees = employeeService.findAllEmployees();
 		req.setAttribute("allEmployees", allEmployees);
-		RequestDispatcher dispatcher = req.getRequestDispatcher("employee.jsp");
+		RequestDispatcher dispatcher = req.getRequestDispatcher("WEB-INF/views/employee.jsp");
 		dispatcher.forward(req, resp);
 
 	}
@@ -41,7 +44,7 @@ public class EmployeeController extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-		System.out.println("Goto /employeeController controller");
+		LOGGER.info("Goto /employeeController controller");
 		
 		if (req.getParameter("employeeId") != null)
 		{
@@ -51,7 +54,7 @@ public class EmployeeController extends HttpServlet {
 
 		List<Employee> allEmployees = employeeService.findAllEmployees();
 		req.setAttribute("allEmployees", allEmployees);
-		RequestDispatcher dispatcher = req.getRequestDispatcher("employee.jsp");
+		RequestDispatcher dispatcher = req.getRequestDispatcher("WEB-INF/views/employee.jsp");
 		dispatcher.forward(req, resp);
 	}
 

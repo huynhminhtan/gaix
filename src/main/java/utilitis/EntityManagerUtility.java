@@ -1,4 +1,4 @@
-package utility;
+package utilitis;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -13,9 +13,9 @@ public class EntityManagerUtility {
 	}
 	
 	private static EntityManagerFactory entityManagerFactory = Persistence
-//			.createEntityManagerFactory("EmployeePersistenceUnitForHibernate");
 			.createEntityManagerFactory("PersistenceUnitForHibernatePostgre");
-	
+//			.createEntityManagerFactory("EmployeePersistenceUnitForHibernate");
+
 	public static EntityManager getEntityManager() {
 		return entityManagerFactory.createEntityManager();
 	}

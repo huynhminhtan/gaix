@@ -1,10 +1,10 @@
-package service;
+package services;
 
 import java.util.List;
 
-import model.Employee;
-import dao.EmployeeDAO;
-import dao.EmployeeDAOImpl;
+import models.Employee;
+import daos.EmployeeDAO;
+import daos.EmployeeDAOImpl;
 
 public class EmployeeServiceImpl implements EmployeeService {
 

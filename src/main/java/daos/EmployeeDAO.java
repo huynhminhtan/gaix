@@ -1,8 +1,8 @@
-package dao;
+package daos;
 
 import java.util.List;
 
-import model.Employee;
+import models.Employee;
 
 public interface EmployeeDAO {
 

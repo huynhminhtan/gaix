@@ -1,23 +1,23 @@
-package controller;
+package controllers;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.List;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import service.EmployeeService;
-import service.EmployeeServiceImpl;
-import model.Employee;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import services.EmployeeService;
+import services.EmployeeServiceImpl;
+import models.Employee;
 
 @WebServlet("")
 public class IndexController extends HttpServlet {
-
+	private static final Logger LOGGER = LoggerFactory.getLogger(IndexController.class);
 	private static final long serialVersionUID = 1L;
 
 	private final EmployeeService employeeService = new EmployeeServiceImpl();
@@ -43,7 +43,8 @@ public class IndexController extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
 
-		System.out.println("Goto /employeeController controller");
+		LOGGER.info("Goto /IndexController controller");
+
 		//
 		// if (req.getParameter("employeeId") != null)
 		// {
