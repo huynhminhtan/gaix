@@ -55,7 +55,7 @@ public class IndexController extends HttpServlet {
 		//
 		// List<Employee> allEmployees = employeeService.findAllEmployees();
 		// req.setAttribute("allEmployees", allEmployees);
-		 RequestDispatcher dispatcher = req.getRequestDispatcher("WEB-INF/views/index.jsp");
+		 RequestDispatcher dispatcher = req.getRequestDispatcher("WEB-INF/views/client/index.jsp");
 		 dispatcher.forward(req, response);
 
 		// return "Hello World";

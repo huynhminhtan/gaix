@@ -36,7 +36,7 @@ public class EmployeeController extends HttpServlet {
 
 		List<Employee> allEmployees = employeeService.findAllEmployees();
 		req.setAttribute("allEmployees", allEmployees);
-		RequestDispatcher dispatcher = req.getRequestDispatcher("WEB-INF/views/employee.jsp");
+		RequestDispatcher dispatcher = req.getRequestDispatcher("WEB-INF/views/client/employee.jsp");
 		dispatcher.forward(req, resp);
 
 	}
@@ -54,7 +54,7 @@ public class EmployeeController extends HttpServlet {
 
 		List<Employee> allEmployees = employeeService.findAllEmployees();
 		req.setAttribute("allEmployees", allEmployees);
-		RequestDispatcher dispatcher = req.getRequestDispatcher("WEB-INF/views/employee.jsp");
+		RequestDispatcher dispatcher = req.getRequestDispatcher("WEB-INF/views/client/employee.jsp");
 		dispatcher.forward(req, resp);
 	}
 
