@@ -53,8 +53,8 @@ public class IndexController extends HttpServlet {
 		// employeeService.removeEmployee(employeeId);
 		// }
 		//
-		// List<Employee> allEmployees = employeeService.findAllEmployees();
-		// req.setAttribute("allEmployees", allEmployees);
+//		 List<Employee> allEmployees = employeeService.findAllEmployees();
+//		 req.setAttribute("allEmployees", allEmployees);
 		 RequestDispatcher dispatcher = req.getRequestDispatcher("WEB-INF/views/client/index.jsp");
 		 dispatcher.forward(req, response);
 
